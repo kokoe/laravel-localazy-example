@@ -3,11 +3,16 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "localazy:download": "localazy download && node ./npm_scripts/insert-phptag-to-langs.cjs"
     },
     "devDependencies": {
+        "@localazy/cli": "^1.7.14",
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0.0",
         "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "fs-extra": "^11.2.0"
     }
 }

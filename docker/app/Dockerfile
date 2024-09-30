@@ -20,8 +20,5 @@ WORKDIR /var/www
 # 必要なPHP拡張モジュールのインストール
 RUN docker-php-ext-install pdo_mysql
 
-# Localazy CLIをインストール
-RUN npm install -g @localazy/cli
-
 # ローカル用のPHP設定ファイルを追加
 COPY ./docker/php/local.ini /usr/local/etc/php/conf.d/
