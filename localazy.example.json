@@ -1,0 +1,14 @@
+{
+    "writeKey": "",
+    "readKey": "",
+
+    "conversion": {
+        "actions": {
+            "type": "php",
+            "output": "lang/${lang}/${file}.php",
+            "params": {
+                "filter_untranslated": true
+            }
+        }
+    }
+}
